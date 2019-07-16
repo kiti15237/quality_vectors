@@ -8,7 +8,7 @@ To write a fasta file containing the sequences:
  Rscript
     fasta_file_name <- "queryseqs.fasta" 
     taxa_seqs <- colnames(seqtab.nochim)
-    headers <- paste(">queryseq", seq(1, length(taxa_seqs)), sep = "")
+    headers <- paste(">seq", seq(1, length(taxa_seqs)), sep = "")
     fasta <- paste(headers, taxa_seqs, sep = "\n", collapse = "\n")
     write(fasta, fasta_file_name)
   ```
